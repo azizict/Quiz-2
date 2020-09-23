@@ -1,0 +1,47 @@
+Quiz -2_09-23-20
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int c,r,x;
+	bool n;
+
+	cout <<  "Enter x\n";
+	cin >> x;
+	cout << "Enter a\n ";
+	cin >> c;
+
+	r = c;
+	r *= x;
+
+	cout << "Enter b\n ";
+	cin >> c;
+	r += c;
+	r *= x;
+
+	cout << "Enter c\n";
+	cin >> c;
+	
+	r+= c;
+	n = r > 0;
+
+	cout << boolalpha << "It is  " << n <<" "that" << r << "is  positive\n";
+
+
+
+Trace Table:
+
+	step | output|    x  |  output   |  c |   output  | return |
+	-------------------------------------------------------------------------------------------------------
+	1      out      |
+	2	     x    |
+
+	3	            |     out    | c |
+
+	4			   out |
+
+	5				0		        	       	                                      
+
